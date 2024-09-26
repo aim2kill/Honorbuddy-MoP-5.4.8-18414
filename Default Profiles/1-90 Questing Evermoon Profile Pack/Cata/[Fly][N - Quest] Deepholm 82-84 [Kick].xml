@@ -1276,6 +1276,8 @@
         <PickUp QuestName="One With the Ground" QuestId="27934" GiverName="Slate Quicksand" GiverId="47195"
                 X="153.002" Y="1488.77" Z="227.349" />
         <If Condition="HasQuest(27934) &amp;&amp; !IsQuestCompleted(27934)">
+            <CustomBehavior File="ForcedMount" />
+            <CustomBehavior File="WaitTimer" WaitTime="200" />
             <CustomBehavior File="InteractWith" QuestId="27934" MobId="47195" NumOfTimes="1" GossipOptions="1"
                             CollectionDistance="50" X="151.431" Y="1486.929" Z="226.6143" />
             <CustomBehavior File="WaitTimer" WaitTime="45000" />
